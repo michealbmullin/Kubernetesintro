@@ -16,5 +16,8 @@ spec:
                 containers:
                         - name: springtdo
                           image: michealbmullin/todoback
+                          env:
+                            - name: MYSQL_IP
+                              value: mysql
                           ports:
                              - containerPort: 8585
