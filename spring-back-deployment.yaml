@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: springtodo
+        labels:
+              app: springtdo
+spec:
+    selector:
+            matchLabels:
+                       app: springtodo
+    template:
+            metadata:
+                    labels:
+                          app: springtodo
+            spec:
+                containers:
+                        - name: springtdo
+                          image: michealbmullin/todoback
+                          ports:
+                             - containerPort: 8585

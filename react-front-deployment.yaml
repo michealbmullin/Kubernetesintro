@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: todofront
+        labels:
+                app: todofront
+spec:
+    selector:
+            matchLabels:
+                   app: todofront
+    template:
+            metadata:
+                    labels:
+                          app: todofront
+            spec:
+                containers:
+                        - name: todofront
+                          image: michealbmullin/todofront
+                          ports:
+                              - containerPort: 3000   
