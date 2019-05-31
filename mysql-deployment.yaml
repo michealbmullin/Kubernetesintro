@@ -17,7 +17,7 @@ spec:
                                 - name: mysql
                                   image: mysql:5.7
                                   env:
-                                          - name: MYSQL_ROOT_PASSWOR
+                                          - name: MYSQL_ROOT_PASSWORD
                                             value: password
                                           - name: MYSQL_DATABASE
-                                            value: springtodo
+                                            value: todolistdb
